@@ -1,20 +1,20 @@
 {
-  "name": "Lisnails.studio",
-  "short_name": "Lisnails.studio",
+  "name": "Danis",
+  "short_name": "Danis",
   "description": "Uñas y belleza - Tu espacio de cuidado personal",
-  "start_url": "/lisnailsstudio/",
-  "scope": "/lisnailsstudio/",
+  "start_url": "/danis/",
+  "scope": "/danis/",
   "display": "standalone",
   "background_color": "#ec4899",
   "theme_color": "#ec4899",
   "icons": [
     {
-      "src": "/lisnailsstudio/icons/icon-192x192.png",
+      "src": "/danis/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/lisnailsstudio/icons/icon-512x512.png",
+      "src": "/danis/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

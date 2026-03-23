@@ -1,22 +1,22 @@
-// sw.js - Service Worker para Lisnails.studio
+// sw.js - Service Worker para Danis
 
-const CACHE_NAME = 'lisnailsstudio-v1';
+const CACHE_NAME = 'danis-v1';
 const urlsToCache = [
-  '/lisnailsstudio/',
-  '/lisnailsstudio/index.html',
-  '/lisnailsstudio/admin.html',
-  '/lisnailsstudio/admin-login.html',
-  '/lisnailsstudio/setup-wizard.html',
-  '/lisnailsstudio/editar-negocio.html',
-  '/lisnailsstudio/manifest.json',
-  '/lisnailsstudio/icons/icon-72x72.png',
-  '/lisnailsstudio/icons/icon-96x96.png',
-  '/lisnailsstudio/icons/icon-128x128.png',
-  '/lisnailsstudio/icons/icon-144x144.png',
-  '/lisnailsstudio/icons/icon-152x152.png',
-  '/lisnailsstudio/icons/icon-192x192.png',
-  '/lisnailsstudio/icons/icon-384x384.png',
-  '/lisnailsstudio/icons/icon-512x512.png'
+  '/danis/',
+  '/danis/index.html',
+  '/danis/admin.html',
+  '/danis/admin-login.html',
+  '/danis/setup-wizard.html',
+  '/danis/editar-negocio.html',
+  '/danis/manifest.json',
+  '/danis/icons/icon-72x72.png',
+  '/danis/icons/icon-96x96.png',
+  '/danis/icons/icon-128x128.png',
+  '/danis/icons/icon-144x144.png',
+  '/danis/icons/icon-152x152.png',
+  '/danis/icons/icon-192x192.png',
+  '/danis/icons/icon-384x384.png',
+  '/danis/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/lisnailsstudio/icons/icon-192x192.png');
+            return caches.match('/danis/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para Lisnails.studio');
+console.log('✅ Service Worker configurado para Danis');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);
