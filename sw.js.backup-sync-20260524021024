@@ -1,6 +1,6 @@
 // sw.js - Service Worker para Danis
 
-const CACHE_NAME = 'danis-v29';
+const CACHE_NAME = 'danis-v25';
 const urlsToCache = [
   '/danis/',
   '/danis/index.html',
