@@ -1,6 +1,6 @@
 // sw.js - Service Worker para Danis
 
-const CACHE_NAME = 'danis-v29';
+const CACHE_NAME = 'danis-v47';
 const urlsToCache = [
   '/danis/',
   '/danis/index.html',
@@ -17,7 +17,14 @@ const urlsToCache = [
   '/danis/icons/icon-152x152.png',
   '/danis/icons/icon-192x192.png',
   '/danis/icons/icon-384x384.png',
-  '/danis/icons/icon-512x512.png'
+  '/danis/icons/icon-512x512.png',
+  '/danis/vendor/react.production.min.js',
+  '/danis/vendor/react-dom.production.min.js',
+  '/danis/vendor/babel.min.js',
+  '/danis/vendor/bcrypt.min.js',
+  '/danis/vendor/tailwind-browser.js',
+  '/danis/vendor/lucide/lucide.css',
+  '/danis/vendor/lucide/lucide.woff2'
 ];
 
 // ============================================
